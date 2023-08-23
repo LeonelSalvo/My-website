@@ -1,0 +1,1 @@
+export const palette = ["#fbbbad", "#ee8695", "#4a7a96", "#333f58", "#292831"]
