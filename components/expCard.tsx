@@ -67,8 +67,7 @@ const ExpCard: React.FC<ExpProps> = ({ title, description, icon, penguin }) => {
 					<span className='m-4 h-72 w-10/12 font-semibold '>{description}</span>
 				</>
 			) : (
-				<div className='h-72 flex items-center font-semibold text-2xl'>
-					<span>Bye!</span>
+				<div className='h-72'>
 				</div>
 			)}
 		</div>
