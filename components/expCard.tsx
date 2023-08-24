@@ -5,8 +5,8 @@ import { useEffect, useState } from 'react'
 interface ExpProps {
 	title: string
 	description: string
-	icon?: string
-	penguin?: string
+	icon: string
+	penguin: string
 }
 
 const ExpCard: React.FC<ExpProps> = ({ title, description, icon, penguin }) => {
@@ -48,7 +48,8 @@ const ExpCard: React.FC<ExpProps> = ({ title, description, icon, penguin }) => {
 			{opened ? (
 				<>
 					<Image
-						className='mt-8 m-4 hover:animate-ping'
+						alt=''
+						className='m-4 mt-8 hover:animate-ping'
 						width={50}
 						height={50}
 						src={icon}
@@ -58,6 +59,7 @@ const ExpCard: React.FC<ExpProps> = ({ title, description, icon, penguin }) => {
 					</span>
 					{penguin && (
 						<Image
+							alt=''
 							className='hover:animate-pulse'
 							width={150}
 							height={150}
