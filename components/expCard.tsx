@@ -39,9 +39,9 @@ const ExpCard: React.FC<ExpProps> = ({ title, description, icon, penguin }) => {
 		<div
 			className={
 				opened
-					? 'animate-duration-400 m-2 flex w-48 animate-fade-left flex-col  items-center justify-center rounded-xl border-4 border-[#292831] text-center animate-delay-200 bg-[#4a7a96] hover:bg-[#292831]'
+					? 'animate-duration-400 m-2 flex w-48 animate-fade-left flex-col items-center justify-center  rounded-xl border-4 border-[#292831] bg-[#4a7a96] text-center text-[#fbbbad] animate-delay-200 hover:bg-[#292831] hover:text-[#ee8695]'
 					: closed
-					? 'animate-duration-400 m-2 flex w-48 animate-jump-out flex-col  items-center justify-center rounded-xl border-4 border-[#292831] text-center animate-delay-200 bg-[#4a7a96] hover:bg-[#292831]'
+					? 'animate-duration-800 m-2 flex w-48 animate-jump-out flex-col items-center justify-center  rounded-xl border-4 border-[#292831] bg-[#4a7a96] text-center text-[#fbbbad] animate-delay-200 hover:bg-[#292831] hover:text-[#ee8695]'
 					: ''
 			}
 		>
@@ -54,9 +54,7 @@ const ExpCard: React.FC<ExpProps> = ({ title, description, icon, penguin }) => {
 						height={50}
 						src={icon}
 					/>
-					<span className={`m-2 h-4 w-11/12 text-xl font-bold text-[#fbbbad]`}>
-						{title}
-					</span>
+					<span className={`m-2 h-4 w-11/12 text-xl font-bold `}>{title}</span>
 					{penguin && (
 						<Image
 							alt=''
@@ -66,12 +64,12 @@ const ExpCard: React.FC<ExpProps> = ({ title, description, icon, penguin }) => {
 							src={penguin}
 						/>
 					)}
-					<span className='m-4 h-72 w-10/12 font-semibold text-[#fbbbad]'>
-						{description}
-					</span>
+					<span className='m-4 h-72 w-10/12 font-semibold '>{description}</span>
 				</>
 			) : (
-				<div className='h-72'></div>
+				<div className='h-72 flex items-center font-semibold text-2xl'>
+					<span>Bye!</span>
+				</div>
 			)}
 		</div>
 	)
