@@ -46,7 +46,7 @@ const HackerText: React.FC<HackerTextProps> = ({ text, keyId }) => {
 					isGoing = false
 				}
 				globalCount++
-			}, 50)
+			}, 20)
 		}
 
 		init()

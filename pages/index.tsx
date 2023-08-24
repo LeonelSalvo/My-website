@@ -1,15 +1,14 @@
 import Banner from '@/components/banner'
 import ExpCard from '@/components/expCard'
-import HackerText from '@/components/hackerText'
-
 import Page from '@/components/page'
+import SocialBar from '@/components/socialBar'
 
 const Index = () => {
 	const gameDescription =
 		'Game developer hobbist since I have studied Videogame programming and design at Da Vinci First Multimedial School'
 
 	const frontDescription =
-		'Frontend developer since 2020 with React + TS + web3 from the very beginning. Some dApps were: AMM | Swaps | NFT marketplaces | Lending | Liquid Staking | Unity WebGL Games '
+		'Frontend engineer since 2019 React + TS + web3 from the very beginning. Some dApps: AMM | Swaps | NFT marketplaces | Lending | Liquid Staking | Unity WebGL Games '
 
 	const backDescription =
 		'Since 2020 backend programmer in parallel working with middleware | Nest.JS bots | solidity smart contracts'
@@ -52,6 +51,7 @@ const Index = () => {
 				</div>
 				<br />
 			</div>
+			<SocialBar/>
 		</Page>
 	)
 }

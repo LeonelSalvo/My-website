@@ -6,7 +6,7 @@ interface BannerProps {}
 
 const Banner: React.FC<BannerProps> = () => {
 	return (
-		<div className=' flex h-96 animate-fade-left  flex-row items-center overflow-hidden rounded-2xl border-4 border-[#fbbbad] animate-delay-300 animate-duration-1000 '>
+		<div className=' flex h-96 animate-fade-left  flex-row items-center overflow-hidden rounded-2xl border-4 border-[#292831] animate-delay-300 animate-duration-1000 '>
 			<Image
 				alt=''
 				className='m-4 animate-flip-up rounded-2xl animate-delay-300 animate-duration-1000'
@@ -24,15 +24,6 @@ const Banner: React.FC<BannerProps> = () => {
                     and Tech Lead for 5-11 member development teams. SCROLL DOWN to see more!'
 					keyId={'Description'}
 				/>
-				<span className='m-5 text-xl text-[#fbbbad]'>
-					Feel free to contact me on{' '}
-					<a
-						href='https://www.linkedin.com/in/agustin-leonel-salvo-646267242/'
-						className='m-5 underline hover:text-[#548baa]'
-					>
-						Linkedin
-					</a>
-				</span>
 			</div>
 		</div>
 	)

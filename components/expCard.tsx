@@ -39,9 +39,9 @@ const ExpCard: React.FC<ExpProps> = ({ title, description, icon, penguin }) => {
 		<div
 			className={
 				opened
-					? 'animate-duration-400 m-2 flex w-48 animate-fade-left flex-col  items-center justify-center rounded-xl border-4 border-[#fbbbad] text-center animate-delay-200 hover:bg-[#292831]'
+					? 'animate-duration-400 m-2 flex w-48 animate-fade-left flex-col  items-center justify-center rounded-xl border-4 border-[#292831] text-center animate-delay-200 bg-[#4a7a96] hover:bg-[#292831]'
 					: closed
-					? 'animate-duration-400 m-2 flex w-48 animate-jump-out flex-col  items-center justify-center rounded-xl border-4 border-[#fbbbad] text-center animate-delay-200 hover:bg-[#292831]'
+					? 'animate-duration-400 m-2 flex w-48 animate-jump-out flex-col  items-center justify-center rounded-xl border-4 border-[#292831] text-center animate-delay-200 bg-[#4a7a96] hover:bg-[#292831]'
 					: ''
 			}
 		>
