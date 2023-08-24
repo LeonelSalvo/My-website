@@ -67,25 +67,3 @@ const Appbar = () => {
 }
 
 export default Appbar
-
-/*
-						<nav className='flex items-center space-x-6'>
-							<div className='hidden sm:block'>
-								<div className='flex items-center space-x-6'>
-									{links.map(({ label, href }) => (
-										<Link key={label} href={href} legacyBehavior>
-											<a
-												className={`text-sm ${
-													router.pathname === href
-														? 'text-indigo-500 dark:text-indigo-400'
-														: 'text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50'
-												}`}
-											>
-												{label}
-											</a>
-										</Link>
-									))}
-								</div>
-							</div>
-						</nav>
-*/
