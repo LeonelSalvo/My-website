@@ -44,9 +44,7 @@ const Appbar = () => {
 			className={
 				opened
 					? 'animate-duration-400 fixed left-0 top-0 z-20 w-full animate-fade pt-safe animate-delay-200'
-					: closed
-					? 'animate-duration-400 fixed left-0 top-0 z-20 w-full animate-jump-out pt-safe animate-delay-200'
-					: ''
+					: 'animate-duration-400 fixed left-0 top-0 z-20 w-full animate-jump-out pt-safe animate-delay-200'
 			}
 		>
 			<header className='border-b bg-[#292831] px-safe '>
