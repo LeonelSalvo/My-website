@@ -9,6 +9,7 @@ interface ExpProps {
 	penguin: string
 }
 
+// Cards for experience showcase
 const ExpCard: React.FC<ExpProps> = ({ title, description, icon, penguin }) => {
 	const [clientWindowHeight, setClientWindowHeight] = useState<number>()
 
@@ -67,8 +68,7 @@ const ExpCard: React.FC<ExpProps> = ({ title, description, icon, penguin }) => {
 					<span className='m-4 h-72 w-10/12 font-semibold '>{description}</span>
 				</>
 			) : (
-				<div className='h-72'>
-				</div>
+				<div className='h-72'></div>
 			)}
 		</div>
 	)
