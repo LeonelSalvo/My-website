@@ -8,6 +8,7 @@ const Banner: React.FC<BannerProps> = () => {
 	return (
 		<div className=' flex h-96 animate-fade-left  flex-row items-center overflow-hidden rounded-2xl border-4 border-[#fbbbad] animate-delay-300 animate-duration-1000 '>
 			<Image
+				alt=''
 				className='m-4 animate-flip-up rounded-2xl animate-delay-300 animate-duration-1000'
 				width={250}
 				height={250}
