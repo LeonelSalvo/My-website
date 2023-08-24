@@ -15,15 +15,18 @@ const SocialBar = () => {
 			link: 'https://github.com/LeonelSalvo/My-website',
 		},
 	]
-	const elements = socialInfo.map((element) => {
+	const elements = socialInfo.map((element, index) => {
 		return (
 			<Link
+				key={index + 'key'}
 				href={element.link}
-				target="_blank"
-				className='m-4 o flex w-4/6 flex-row items-center rounded-lg border-4 border-[#292831] p-2 pl-6 align-middle text-[#292831] hover:bg-[#292831] hover:text-[#ee8695]'
+				target='_blank'
+				className='o m-4 flex w-4/6 flex-row items-center rounded-lg border-4 border-[#292831] p-2 pl-6 align-middle text-[#292831] hover:bg-[#292831] hover:text-[#ee8695]'
 			>
 				<Image width={50} height={50} alt='' src={element.icon} />
-				<span className='font-mono text-xl font-bold ml-8'>{element.Message}</span>
+				<span className='ml-8 font-mono text-xl font-bold'>
+					{element.Message}
+				</span>
 			</Link>
 		)
 	})
